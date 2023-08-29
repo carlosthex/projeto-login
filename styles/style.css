@@ -27,13 +27,13 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
     background-color: white;
     width: 250px;
     height: 515px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    transform: translate(-50%,-50%);
     
     /*transition: width .2s, heigth.2s;
     transition-timing-function: ease;*/
@@ -59,6 +59,7 @@ h1 {
 
 p {
     font-size: 0.8em;
+    text-align: justify;
 }
 
 label {
@@ -70,8 +71,31 @@ label {
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
+}
+
+.campo span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo input {
+    background-color: #66dad6;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+
+.campo input:focus-within {
+    background-color: white;
 }
 
 input[type=submit] {
@@ -121,6 +145,7 @@ input[type=submit]:hover {
 
     #login {
         width: 80vw;
+        height: 280px;
     }
 
     #imagem {
@@ -143,6 +168,7 @@ input[type=submit]:hover {
 
     #login {
         width: 950px;
+        height: 340px
     }
 
     #imagem {
@@ -161,6 +187,7 @@ input[type=submit]:hover {
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
